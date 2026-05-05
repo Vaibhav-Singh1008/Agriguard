@@ -1,21 +1,43 @@
-# AgriGuard
+# AgriGuard 🌿🛡️
 
-**AgriGuard** is an AI-powered crop health diagnostic tool designed to analyze plant diseases and soil fertility. Developed by **Team SynergyX** at **IIT Patna**, this platform leverages Artificial Intelligence to provide farmers with actionable insights and real-time crop monitoring.
+> **Revolutionizing Agriculture through AI-driven Diagnostics.**
 
-## Features
+AgriGuard is a comprehensive Capstone Project developed at **IIT Patna**. It serves as an intelligent bridge between traditional farming and modern technology, providing real-time crop disease detection and soil health monitoring to ensure food security and optimized yields.
 
-* **Disease Detection**: Instant AI analysis to identify and diagnose plant diseases.
-* **Soil Fertility Diagnosis**: Comprehensive assessment of soil health and nutrient requirements.
-* **Smart AI Monitoring**: Advanced algorithms for precision agricultural advice and weather updates.
-* **Integrated Dashboard**: A seamless and modern user interface for comprehensive farm data management.
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![Flask](https://img.shields.io/badge/Flask-Framework-lightgrey?style=for-the-badge&logo=flask)
+![AI/ML](https://img.shields.io/badge/Focus-AI%20%26%20ML-green?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-## Tech Stack
+---
 
-* **Backend**: Python, Flask
-* **Frontend**: HTML5, CSS3, JavaScript
-* **AI/ML**: Specialized models for agricultural diagnostics and soil assessment.
+## 📌 Problem Statement
+Farmers often lose up to 40% of their crops due to late disease detection and lack of precise soil data. **AgriGuard** solves this by providing an affordable, AI-powered diagnostic tool that works directly from a web interface.
 
-## Installation
+## 🚀 Key Modules
+
+### 🔍 1. Crop Disease Detection
+Advanced image processing models that analyze plant leaves to identify fungal, bacterial, or viral infections instantly.
+
+### 🧪 2. Soil Fertility Analysis
+Algorithms designed to interpret soil parameters and suggest the best-suited crops and fertilizer requirements.
+
+### 🤖 3. Smart AI Monitoring
+A specialized 24/7 assistant that provides farming advice based on environmental data and historical trends.
+
+### 📊 4. Interactive Dashboard
+A modern frontend designed for clarity, allowing users to track farm health and receive weather-based alerts.
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Backend** | Python, Flask |
+| **AI/ML** | Computer Vision, Diagnostic Models |
+| **Database** | SQLite / PostgreSQL |
+
+## ⚙️ Installation & Setup
 
 1. Clone the repository:
 ```bash
