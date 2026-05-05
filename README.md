@@ -19,4 +19,4 @@
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/YourUsername/AgriGuard.git](https://github.com/YourUsername/AgriGuard.git)
+git clone [https://github.com/Vaibhav-Singh1008/AgriGuard.git](https://github.com/Vaibhav-Singh1008/AgriGuard.git)
