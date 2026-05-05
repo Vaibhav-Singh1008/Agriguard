@@ -71,7 +71,7 @@ aiBtn.addEventListener('click', () => {
         }
     } else if (soil === "clay") {
         if (lang === "hi") {
-            advice += " चिकनी मिट्टी में पानी ज्यादा भरता है। जड़ों को सड़ने से बचाने के लिए खेत में जलभराव न होने दें।";
+            advice += " चिकनी मिट्टी में पानी ज्यादा भरता है। जड़ों को सड़ने से बचाने के लिए खेत में जलभराव न होने दें।";
         } else {
             advice += " Clay soil holds too much water. Ensure proper drainage to prevent root rot.";
         }
@@ -80,3 +80,41 @@ aiBtn.addEventListener('click', () => {
     aiText.textContent = advice;
     aiResponse.style.display = "block";
 });
+const chatForm = document.getElementById('chatForm');
+const userInput = document.getElementById('userInput');
+const chatWindow = document.getElementById('chatWindow');
+const chatImageUpload = document.getElementById('chatImageUpload');
+
+if (chatForm && chatWindow) {
+    function appendMessage(content, className) {
+        const msgDiv = document.createElement('div');
+        msgDiv.className = `message ${className}`;
+        msgDiv.innerHTML = content;
+        chatWindow.appendChild(msgDiv);
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+
+    chatForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const text = userInput.value.trim();
+        if (text) {
+            appendMessage(text, 'user-msg');
+            userInput.value = '';
+        }
+    });
+
+    if (chatImageUpload) {
+        chatImageUpload.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const imgHtml = `<img src="${e.target.result}" class="chat-img" alt="Uploaded Crop">`;
+                    appendMessage(imgHtml, 'user-msg');
+                }
+                reader.readAsDataURL(file);
+                this.value = '';
+            }
+        });
+    }
+}
